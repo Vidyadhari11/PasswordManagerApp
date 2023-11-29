@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-container {
+  background-color: #9ba9eb;
+
+  padding: 60px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .card-container {
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+.logo-image {
+  height: 100px;
+  width: 180px;
+}
+.create-password-container {
+  background-color: #5763a5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 40px;
+  margin-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .create-password-container {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+.password-image1 {
+  height: 200px;
+  width: 200px;
+  order: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .password-image1 {
+    display: none;
+  }
+}
+.password-image2 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .password-image2 {
+    height: 350px;
+    width: 350px;
+    order: 1;
+    display: block;
+  }
+}
+
+.password-container {
+  background-color: #454f84;
+  border-radius: 12px;
+  padding-left: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 300px;
+  max-width: 400px;
+  order: 1;
+}
+@media screen and (min-width: 768px) {
+  .password-container {
+    order: 0;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.add-password-name {
+  color: #ffffff;
+  font-family: roboto;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .add-password-name {
+    font-size: 35px;
+  }
+}
+.text-container {
+  background-color: #f8fafc;
+  border-radius: 4px;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.img {
+  height: 22px;
+  width: 20px;
+  margin-right: 2px;
+  padding: 0;
+  align-self: center;
+}
+.input {
+  color: #5763a5;
+  font-family: roboto;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  padding: 7px;
+  background: transparent;
+  margin-left: 12px;
+  border-left: 2px solid #94a3b8;
+  width: 100%;
+  height: 100%;
+}
+.add-button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-right: 40px;
+  margin-bottom: 7px;
+}
+.sub-div2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #5763a5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+.first-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.your-password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.heading-name {
+  color: #f8fafc;
+  font-family: roboto;
+  font-size: 20px;
+  margin-right: 6px;
+}
+.colored-text {
+  border: 1px solid #9ba9eb;
+  border-radius: 8px;
+  width: 20px;
+  text-align: center;
+  color: #f8fafc;
+  font-family: roboto;
+  font-size: 14px;
+}
+.search-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 200px;
+  height: 25px;
+  border-radius: 7px;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+.search-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-left: 1px solid #94a3b8;
+  font-size: 13px;
+  padding: 13px;
+}
+.hr-line {
+  border: 1px solid #9ba9eb;
+  width: 100%;
+}
+.show-password-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: none;
+  outline: none;
+  margin-right: 7px;
+}
+.label {
+  color: #ffffff;
+  font-family: roboto;
+  font-size: 20px;
+}
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.empty-image {
+  height: 200px;
+  width: 220px;
+}
+@media screen and (min-width: 768px) {
+  .empty-image {
+    height: 300px;
+    width: 400px;
+  }
+}
+.np-password {
+  color: #f8fafc;
+  font-family: roboto;
+  font-size: 16px;
+}
+.result-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
